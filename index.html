@@ -8,7 +8,7 @@
 
 <!--
 To prefill with the correct data,
-just add the data-cb attibute
+just add the data-clearbit attibute
 with the right endpoint.
 
 If you want to map to custom range, add data-mapping
@@ -21,11 +21,11 @@ To customize the role select:
  -->
 
 <form action="">
-  <input type="email" data-cb="person.email">
-  <input type="text" data-cb="person.name.givenName">
-  <input type="text" data-cb="company.id">
-  <input type="text" data-cb="company.metrics.employees" data-mapping="true">
-  <select data-cb="person.employment.role">
+  <input type="email" data-clearbit="person.email">
+  <input type="text" data-clearbit="person.name.givenName">
+  <input type="text" data-clearbit="company.id">
+  <input type="text" data-clearbit="company.metrics.employees" data-mapping="true">
+  <select data-clearbit="person.employment.role">
     <option value="customer">Customer Success</option>
     <option value="cmo">CMO</option>
     <option value="ceo">CEO</option>
