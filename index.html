@@ -8,7 +8,7 @@
 
 <!--
 To prefill with the correct data,
-just add the data-clearbit attibute
+just add the frictionless attibute
 with the right endpoint.
 
 If you want to map to custom range, add data-mapping
@@ -21,11 +21,13 @@ To customize the role select:
  -->
 
 <form action="">
-  <input type="email" data-clearbit="person.email">
-  <input type="text" data-clearbit="person.name.givenName">
-  <input type="text" data-clearbit="company.id">
-  <input type="text" data-clearbit="company.metrics.employees" data-mapping="true">
-  <select data-clearbit="person.employment.role">
+  <input type="email" frictionless="email" value="yanael@madkudu.com">
+  <input type="text" frictionless="firstName">
+  <input type="text" frictionless="lastName">
+  <input type="text" frictionless="fullName">
+  <input type="text" frictionless="company.name">
+  <input type="text" frictionless="company.metrics.employees" frictionless-mapping="true">
+  <select frictionless="person.employment.role">
     <option value="customer">Customer Success</option>
     <option value="cmo">CMO</option>
     <option value="ceo">CEO</option>
@@ -33,5 +35,6 @@ To customize the role select:
 </form>
 
 <script src="fsu.js"></script>
+<script src="bundle.js"></script>
 </body>
 </html>

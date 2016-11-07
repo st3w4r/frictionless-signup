@@ -1,6 +1,6 @@
-# Desgin
+# DESIGN
 
-# Html side
+# HTML Side
 
 Add on the input field `data-frictionless=email`
 Mapping Clearbit data on HTML side
@@ -16,6 +16,7 @@ Gestion:
 	- List
 	- CheckList
 
+# JS Side
 ## Class
 
 - FrictionlessSignup
@@ -47,6 +48,7 @@ Gestion:
 	throw error if an account already exist
 	send event if data was modified per the user
 	send event if the data was prefilled correctly
+	send event with email address
 
 # Features
 

@@ -12,17 +12,17 @@ var clearbit = {
       "domain": "clearbit.com",
       "name": "Clearbit",
       "title": "Founder and CEO",
-      "role": "ceo",
+      "role": "cmo",
       "seniority": "executive"
     }
   },
   "company": {
     "id": "c5a6a9c5-303a-455a-935c-9dffcd2ed756",
-    "name": "Alex MacCaw",
+    "name": "Clearbit",
     "metrics": {
       "alexaUsRank": 544,
       "alexaGlobalRank": 943,
-      "employees": 20313,
+      "employees": 42,
       "employeesRange": "1000+",
       "marketCap": null,
       "raised": 10610000000,
