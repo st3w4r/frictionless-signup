@@ -44,6 +44,7 @@ Gestion:
 
 # Events
 
+	set an event on all fields, emit an event when focus out
 	throw error if email is not valid
 	throw error if an account already exist
 	send event if data was modified per the user
