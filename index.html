@@ -22,11 +22,12 @@ To customize the role select:
 
 <form action="">
   <input type="email" frictionless="email">
-  <input type="text" frictionless="firstName">
-  <input type="text" frictionless="lastName">
-  <input type="text" frictionless="fullName">
-  <input type="text" frictionless="companyName">
-  <input type="text" frictionless="companySize" frictionless-mapping="true">
+  <input type="text" frictionless="person.name.givenName">
+  <input type="text" frictionless="person.name.familyName">
+  <input type="text" frictionless="person.name.fullName">
+  <input type="text" frictionless="company.name">
+  <input type="text" frictionless="company.domain">
+  <input type="text" frictionless="company.metrics.employees" frictionless-mapping="true">
   <select frictionless="person.employment.role">
     <option value="customer">Customer Success</option>
     <option value="cmo">CMO</option>
