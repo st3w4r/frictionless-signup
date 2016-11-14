@@ -55,55 +55,54 @@ function requestADemo(val, selector) {
 
 function customMappingRole(val) {
 	var res = null;
-console.log('ROLE: ', val);
-  if (val.includes('customer')) {
-    res = "customer";
-  }
-  else if (val.includes('design')) {
-    res = "design";
-  }
-  else if (val.includes('tech')) {
-    res = "tech";
-  }
-  else if (val.includes('sales')) {
-    res = "sales";
-  }
-  else if (val.includes('marketing')) {
-    res = "cmo";
-  }
-  else if (val.includes('engineering')) {
-    res = "cto";
-  }
-  else if (val.includes('ceo')) {
-    res = "ceo";
-  }
-  return res;
+	if (val.includes('customer')) {
+		res = "customer";
+	}
+	else if (val.includes('design')) {
+		res = "design";
+	}
+	else if (val.includes('tech')) {
+		res = "tech";
+	}
+	else if (val.includes('sales')) {
+		res = "sales";
+	}
+	else if (val.includes('marketing')) {
+		res = "cmo";
+	}
+	else if (val.includes('engineering')) {
+		res = "cto";
+	}
+	else if (val.includes('ceo')) {
+		res = "ceo";
+	}
+	return res;
 }
 
 function customMappingSize(val) {
-    var res;
-  if (val >= 0 && val < 5) {
-    res = "1-4 employees";
-  }
-  else if (val >= 5 && val < 10) {
-    res = "5-9 employees";
-  }
-  else if (val >= 10 && val < 50) {
-    res = "10-49 employees";
-  }
-  else if (val >= 50 && val < 100) {
-    res = "50-99 employees";
-  }
-  else if (val >= 100 && val < 1000) {
-    res = "100-999 employees";
-  }
-  else if (val >= 1000) {
-    res = "1000+ employees";
-  }
-  else {
-    res = val
-  }
-  return res;
+	var res;
+	if (val >= 0 && val < 5) {
+		res = "1-4 employees";
+	}
+	else if (val >= 5 && val < 10) {
+		res = "5-9 employees";
+	}
+	else if (val >= 10 && val < 50) {
+		res = "10-49 employees";
+	}
+	else if (val >= 50 && val < 100) {
+		res = "50-99 employees";
+	}
+	else if (val >= 100 && val < 1000) {
+		res = "100-999 employees";
+	}
+	else if (val >= 1000) {
+		res = "1000+ employees";
+	}
+	else {
+		res = val
+	}
+	return res;
 }
 </script>
 </body>

@@ -176,25 +176,25 @@ function prefill() {
   }
 }
 
-// function fetchAPI() {
-//   var request = new XMLHttpRequest();
-//   request.open('GET', 'https://mention.com/wp-content/themes/mention/scripts/wp-clearbit.php', true);
+function fetchAPI() {
+  var request = new XMLHttpRequest();
+  request.open('GET', 'https://mention.com/wp-content/themes/mention/scripts/wp-clearbit.php', true);
 
-//   request.onload = function() {
-//     if (request.status >= 200 && request.status < 400) {
-//       // Success!
-//       return clearbit = JSON.parse(request.responseText);
-//     } else {
-//       console.log('error API');
-//     }
-//   };
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      // Success!
+      return clearbit = JSON.parse(request.responseText);
+    } else {
+      console.log('error API');
+    }
+  };
 
-//   request.onerror = function() {
-//     console.log('connexion error');
-//   };
+  request.onerror = function() {
+    console.log('connexion error');
+  };
 
-//   request.send();
-// }
+  request.send();
+}
 
 window.onload = function() {
   var email = getUrlParameter('email')
